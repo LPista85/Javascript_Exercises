@@ -47,7 +47,13 @@ document.querySelectorAll('.btnStory').forEach(button => {
 let loginButton = document.querySelector('#login');
 let loginWindow = document.querySelector('.login-window');
 let regWindow = document.querySelector('.reg-window');
-let regButton = document.querySelector('#registration')
+let regButton = document.querySelector('#registration');
+let regB = document.querySelector('#reg');
+let regRequest = document.querySelector('#regRequest');
+let loginRequest = document.querySelector('#loginRequest')
+let pwForget = document.querySelector('#forgottenPass')
+let reminderWindow = document.querySelector('.reminder-window')
+let close = document.querySelector("#close")
 
 loginButton.addEventListener('click', () => {
     loginWindow.classList.toggle("login-windowVisible");
@@ -58,4 +64,30 @@ loginButton.addEventListener('click', () => {
 regButton.addEventListener('click', () => {
     regWindow.classList.toggle("reg-windowVisible");
     loginWindow.classList.remove("login-windowVisible")
+    reminderWindow.classList.remove("reminder-windowVisible")
+})
+
+regB.addEventListener('click', () => {
+    loginWindow.classList.remove("login-windowVisible")
+    regWindow.classList.toggle("reg-windowVisible");
+    reminderWindow.classList.remove("reminder-windowVisible")
+})
+
+
+
+pwForget.addEventListener('click', () => {
+    loginWindow.classList.remove("login-windowVisible")
+    reminderWindow.classList.add("reminder-windowVisible")
+})
+
+close.addEventListener('click', () => {
+    reminderWindow.classList.remove("reminder-windowVisible")
+})
+
+loginRequest.addEventListener('click', (e) => {
+    e.preventDefault
+})
+
+regRequest.addEventListener('click', (e) => {
+    e.preventDefault
 })

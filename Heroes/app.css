@@ -193,10 +193,12 @@ nav {
 /*Login bar*/
 .login-bar {
   width: 100%;
+  max-width: 1920px;
   -webkit-transform: translate(0, 8vh);
           transform: translate(0, 8vh);
   background-color: #d2bb69b2;
   position: fixed;
+  z-index: 10;
 }
 
 .regbox {
@@ -1008,7 +1010,8 @@ nav {
 }
 
 .login-window,
-.reg-window {
+.reg-window,
+.reminder-window {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1022,10 +1025,86 @@ nav {
 }
 
 .login-window img,
-.reg-window img {
+.reg-window img,
+.reminder-window img {
   width: 80px;
   border-radius: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+}
+
+.reminder-window {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(51, 51, 51, 0.466);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  border: 2px solid #D2BB69;
+  border-radius: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.reminder-windowVisible {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.reminder-window h3 {
+  color: white;
+  font-size: 0.9em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 14px;
+}
+
+.reminder-window form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.reminder-window input {
+  width: 70%;
+  height: 30px;
+  padding-left: 5px;
+  border: 1px solid #D2BB69;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.reminder-window button {
+  height: 30px;
+  padding: 0 15px;
+  border: 1px solid #D2BB69;
+  border-left: none;
+  background-color: #aaa;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.reminder-window button:hover {
+  background-color: #e2ca88;
+}
+
+#close {
+  position: absolute;
+  width: 28px;
+  -webkit-transform: translate(116px, -14px);
+          transform: translate(116px, -14px);
+  background-color: #D2BB69;
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */

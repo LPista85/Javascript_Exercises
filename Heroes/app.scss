@@ -163,9 +163,11 @@ nav {
 
 .login-bar {
     width: 100%;
+    max-width: 1920px;
     transform: translate(0, 8vh);
     background-color: #d2bb69b2;
     position: fixed;
+    z-index: 10;
 }
 
 .regbox {
@@ -789,7 +791,8 @@ nav {
 }
 
 .login-window,
-.reg-window {
+.reg-window,
+.reminder-window {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -798,4 +801,70 @@ nav {
         border-radius: 50%;
         transform: translate(0, -50%);
     }
+}
+
+.reminder-window {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(51, 51, 51, 0.466);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border: 2px solid $link3;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.reminder-windowVisible {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.reminder-window h3 {
+    color: white;
+    font-size: 0.9em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    margin-left: 14px;
+}
+
+.reminder-window form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.reminder-window input {
+    width: 70%;
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid $link3;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.reminder-window button {
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid $link3;
+    border-left: none;
+    background-color: #aaa;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.reminder-window button:hover {
+    background-color: rgb(226, 202, 136);
+}
+
+#close {
+    position: absolute;
+    width: 28px;
+    transform: translate(116px, -14px);
+    background-color: $link3;
+    cursor: pointer;
 }
