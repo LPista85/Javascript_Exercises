@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineHeroesHu</title>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="x-icon" href="img/logo/golden-sword-bow-logo-discord.png">
+
+
+</head>
+
+<body id="jumbo">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v12.0" nonce="mHpErNwk"></script>
+
+    <!--NavBar-->
+    <nav id="navbar" class="nav">
+
+        <div class="logo">
+            <div class="circle">
+                <img src="img/logo/golden-sword-bow-logo-64x.png" alt="">
+            </div>
+        </div>
+
+
+        <ul class="navLinks">
+            <li><a href="#jumbo">Főoldal</a></li>
+            <li><a href="#gameSection">A Játék</a></li>
+            <li><a href="#teamSection">A Csapat</a></li>
+
+            <li><a href="#newsSection">Hírek</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <!--Navbar addition-->
+    <div class="login-bar">
+        <div class="regbox">
+            <a href="#" id="login">Bejelentkezés</a>
+            <a href="#" id="registration">Regisztráció</a>
+        </div>
+
+    </div>
+
+
+    <!--SlideJumbo-->
+
+    <div class="jumbotron">
+        <h1>Üdv Kalandor!</h1>
+        <p class="info">Csatlakozz most <span class="sip" data-ip="play.mineheroes.hu" data-port="25565">0</span> játékoshoz: <span class="ip">play.mineheroes.hu</span></p>
+    </div>
+
+
+    <!--InfoBoard-->
+    <div class="infoInfo">
+        <div class="infoBlock">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+            <h3>Rólunk</h3>
+            <p>Magyarország első igazi mmorpg szerverét hoztuk létre még 2015-ben. Most újúlt erővel a célunk az, hogy legyen Magyarországon is egy nemzetközi színvonalú magyar nyelvű online mmorpg szerver.</p>
+
+        </div>
+        <div class="infoBlock">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <h3>Csapatunk</h3>
+            <p>A Mineheroes csapata tapasztalt, kreatív emberekből áll. Segítőkészek, és szívesen állnak a játékosok rendelkezésére.</p>
+        </div>
+        <div class="infoBlock">
+            <i class="fa fa-server" aria-hidden="true"></i>
+            <h3>A szerver</h3>
+            <p>Szerverünk hamarosan megnyitásra kerül. Ha szeretnél értesülni a fejlesztésekkel kapcsolatban, akkor szívesen látunk discord szerverünkön: <a href="http://discord.mineheroes.hu">discord.mineheroes.hu</a></p>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Játék és Könyv-->
+
+
+
+    <div class="title gameTitle" id="gameSection">
+        <h2>A játékról</h2>
+    </div>
+
+    <div class="gameContent">
+        <div class="history">
+            <img src="img/kikoto.png" alt="">
+            <button type="button" class="btnStory">Történetünk</button>
+            <div class="storyContent">
+                <p>
+                    A MineHeroes egy magyar online (eredeti) minecraft MMORPG szerver. Kasztokkal, küldetésekkel, karakter fejlesztéssel. A szerver elődje a Flying City volt ami 2014-ben nyitott a CraftUnió szerver közösségen belül. Ezt 2015-ben váltotta egy teljesen újra
+                    tervezett mmorpg szerver már MineHeroes néven. Néhány hónap után a CraftUnió bezárt, és a MineHeroes "legénység" nélkül maradt. 2020 Januárjában a két alapító sourceSCOde (Régen Scofield__) és VortexXxo újra kezdte a projektet, teljesen
+                    az alapoktól.
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="history">
+            <img src="img/ruins.png" alt="">
+            <button type="button" class="btnStory">A Story</button>
+            <div class="storyContent">
+                <p>
+                    Wellmoor egyesülése látszólag végre meghozta a békét a provinciába, és Sangriel sanyargatására is egyre kevesebben emlékeznek már vissza. Talán ennyi idő után végre békében élhet az emberiség, mint valaha réges-régen? Ennek a békének, és a városok közötti
+                    határzárak feloldásának köszönhetően egyre több ember látogat el a legnagyobb, és legősibb városba, Ruinsba. Sokan szerencsét próbálni jönnek, mások csak átutazóban vannak, vagy talán csak egy időre maradnak. De vannak akik a béke
+                    fenntartása miatt utaznak ide, hogy azt a sereget erősítsék, akiknek a feladata az, hogy az itt maradt gonosz erőket, végleg elpusztítsák. Hősünket furcsa álmok gyötrik mióta megérkezett Ruinsba, és szeretné kideríteni hogy ezek az
+                    álmok mit jelentenek. Hősünk egy kalandja során ismeri meg Kaent, az ezeréves bölcset. Kaen túlélte Sangriel sanyargatását, és ő az egyetlen ma is élő mágus azokból az időkből. Kaen elmeséli hogy a háború a fény, és a sötétség, a tiszták,
+                    és a bűnösök közötti több száz éves harc volt. A bűnösök 3 legsötétebb vezére Xaid, testvére Zaiir, és a valaha volt leggonoszabb teremtmény Azelath vezette seregeit a tiszták világába, hogy leigázza azt, és uralma alá hajtsa az itt
+                    élőket. Seregei élére pedig Sangrielt tette, egy velejéig romlott lelketlen hadvezért. A provincia vezetője Armius San mindent megtett hogy a háborúból végül győztesként kerüljünk ki, ezért a provincia összes mágusát magához rendelte,
+                    köztük Kaent is. A terve az volt hogy a sötétség és fény között létrehozzanak egy olyan világot ami a jelenlegi világ pontos mása. Ahol nincs bűn, és ahol Azelath sohasem találhat ránk. Ám a terv az utolsó utáni pillanatban rosszul
+                    sült el. Azelathnak sikerült az egyik mágus lelkét elragadnia, aki az új világ létrehozásakor egy olyan mágiát szabadított ránk, ami végül megfertőzte az új világot, és egy átjárót hozott létre helyette. Egy átjárót a sötétség és a
+                    fény között, hogy aztán azon keresztül bekebelezze világunkat. Ugyan a csatát akkor megnyertük, Sangriel lelkét egy lélek kalitkába zártuk, és darabokra törtük. Azelathot visszaszorítottuk az átjáróba, de félő hogy ezzel még nem lesz
+                    vége. Azelath erősödik, és tervét szövögeti. A lélek kalitka darabjait pedig magával vitte az átjárón keresztül. Az átjárón keresztül azóta is szivárog a gonoszság. Folyamatosan sötét mágiák, és lények jönnek, és próbálják gyengiteni
+                    a fény erejét világunkban. Tehát a végső cél az, hogy eljussunk az átjárón keresztül a sötétségbe, és megöljük a két testvért Xaidot, és Zaiirt, majd végezzünk Azelathtal is.
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="history">
+            <img src="img/phalea.png" alt="">
+            <button type="button" class="btnStory">Célunk</button>
+            <div class="storyContent">
+                <p>
+                    Szeretnénk a hazai minecraft szerverközösséget nemzetközi szintre emelni. Szeretnénk ha a játékosok végre ki tudnának szakadni a jól megszokott "tört szerveres" környezetből, ami már hosszú évek óta jellemző kicsiny országunkban. Igyekszünk építeni a
+                    közösséget, és ösztönözni minden játékost hogy válassza az eredeti játékot. Ezért közösségi média felületeinken rendszeresen szervezünk kisebb játékokat, és sorsolunk ki eredeti Minecraftot.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Team-->
+
+    <div class="title" id="teamSection">
+        <h2>A Csapat</h2>
+    </div>
+
+
+    <div class="teamSection">
+
+        <div class="teamContainer">
+
+            <div class="teamCard">
+
+                <div class="photoSection devbg">
+                    <img src="img/sourceSCOde.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">sourceSCOde</span></p>
+                    <p><span class="developer"> Fejlesztő</span></p>
+                </div>
+
+            </div>
+
+
+
+            <div class="teamCard">
+
+                <div class="photoSection devbg">
+                    <img src="img/VortexXxo.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">VortexXxo</span></p>
+                    <p><span class="developer">Manager</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection constbg">
+                    <img src="img/Mr_Gekko88.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">Mr_Gekko88</span></p>
+                    <p><span class="constructer">Főépítész</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/DemiWolf1233.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">DemiWolf1233</span></p>
+                    <p><span class="admin">Admin</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/NoemiArt.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">NoemiArt</span></p>
+                    <p><span class="admin">Admin</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/Farkass220.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">Farkass220</span></p>
+                    <p><span class="admin">Admin</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/Anubisz17.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">Anubisz17</span></p>
+                    <p><span class="admin"> Admin</span></p>
+                </div>
+
+            </div>
+
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/GregorSan.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">GregorSan</span></p>
+                    <p><span class="admin">Admin</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/tollasmacska.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">tollasmacska</span></p>
+                    <p><span class="admin">Admin</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/Csipeszto.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">Csipeszto</span></p>
+                    <p><span class="admin">Admin</span></p>
+                </div>
+
+            </div>
+
+
+            <div class="teamCard">
+
+                <div class="photoSection adminbg">
+                    <img src="img/Konc0321.png" alt="">
+                </div>
+
+                <div class="descriptionSection">
+                    <p><span class="nameSection">Konc0321</span></p>
+                    <p><span class="admin">Admin</span></p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+    <!--News-->
+
+    <div class="title" id="newsSection">
+        <h2>Hírek</h2>
+    </div>
+
+
+    <div class="newsSection">
+        <div class="newsContent">
+
+
+            <div class="fb-page" data-href="https://facebook.com/mineheroesHU" data-tabs="timeline" data-width="800" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+                <blockquote cite="https://facebook.com/mineheroesHU" class="fb-xfbml-parse-ignore"><a href="https://facebook.com/mineheroesHU">MineHeroes</a></blockquote>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="newsSectionFacebook">
+
+
+    </div>
+
+
+
+
+
+
+
+    <!--Kontak-->
+
+    <div class="contact" id="contact">
+
+        <div class="contactform">
+            <form class="fromsubmit" action="submit">
+                <input class="input" type="text" name="name" placeholder="Teljes Neved">
+                <input class="input" type="email" name="email" placeholder="Email Címed">
+                <textarea class="inputMessage" name="message" id="message" cols="27" rows="6" placeholder="Üzeneted:"></textarea>
+                <button class="inputButton" type="submit">Küldés</button>
+            </form>
+
+            <div class="contacts">
+                <p><i class="fas fa-envelope"></i> mineheroeshu@gmail.com</p>
+
+            </div>
+
+        </div>
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/mineheroesHU" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="http://discord.mineheroes.hu" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/mineheroeshu/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCJvfWy4TLSLzk9EFf2q258w" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="" target="_blank"><i class="fab fa-tiktok" ></i></a>
+            <a href="https://www.patreon.com/mineheroesHu" target="_blank"><img src="img/patreon.png" alt=""></a>
+
+
+
+
+        </div>
+        <div class="copyRights">
+            <p>Copyright ©2021 MineHeroes</p>
+        </div>
+
+    </div>
+
+    <!--Login Window and Reg Window-->
+    <div class="login-window">
+        <img src="img/logo/golden-sword-bow-logo-discord.png" alt="">
+        <form action="">
+            <input type="text" name="username" id="username" placeholder="felhasználónév">
+            <input type="password" name="password" id="password" placeholder="jelszó">
+            <button type="submit">Bejelentkezés</button>
+        </form>
+        <div class="info-box">
+            <a href="#" id="reg">Registráció</a>
+            <a href="#" id="forgottenPass">Elfelejtett Jelszó</a>
+
+        </div>
+    </div>
+
+
+
+    <div class="reg-window">
+        <img src="img/logo/golden-sword-bow-logo-discord.png" alt="">
+        <form action="">
+            <input type="text" name="reg-username" id="regUsername" placeholder="felhasználónév">
+            <input type="text" name="fullName" id="fullName" placeholder="teljes neved">
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="password" name="regPass" id="regPass" placeholder="jelszó">
+            <input type="passowrd" name="reRegPass" id="reRegpass" placeholder="jelszó megerősítése">
+            <button type="submit">Regisztrál</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="ip.js"></script>
+
+
+
+
+
+</body>
+
+</html>

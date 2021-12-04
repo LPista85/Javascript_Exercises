@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #26463a;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: firebrick;
+    margin-bottom: 0;
+}
+
+button{
+    
+    margin: 5px;
+    background: linear-gradient(180deg, rgba(178,34,34,1) 100%, rgba(38,70,58,1) 100%); 
+    color: white;
+    border: 0px solid;
+    padding: 31px  10px;
+    font-size: 1em;
+    transition: 0.25s;
+    width: 110px;
+}
+
+button:hover{
+    border-color: peru;
+    color: rgb(255, 203, 151);
+    background: linear-gradient(180deg, rgba(178,34,34,1) 0%, rgba(38,70,58,1) 0%); 
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.jumbo{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vW;
+    background-color: dimgray;
+    text-align: center;
+    background: url("../img/ruins.png") no-repeat center center fixed;
+
+}
+
+h1{
+    margin: 0;
+    padding-top: 30px;
+}
+
