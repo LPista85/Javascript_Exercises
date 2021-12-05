@@ -54,11 +54,13 @@ let loginRequest = document.querySelector('#loginRequest')
 let pwForget = document.querySelector('#forgottenPass')
 let reminderWindow = document.querySelector('.reminder-window')
 let close = document.querySelector("#close")
+let close2 = document.querySelector("#close2")
+let close3 = document.querySelector("#close3")
 
 loginButton.addEventListener('click', () => {
     loginWindow.classList.toggle("login-windowVisible");
     regWindow.classList.remove("reg-windowVisible");
-    ú
+
 })
 
 regButton.addEventListener('click', () => {
@@ -83,6 +85,12 @@ pwForget.addEventListener('click', () => {
 close.addEventListener('click', () => {
     reminderWindow.classList.remove("reminder-windowVisible")
 })
+close2.addEventListener('click', () => {
+    regWindow.classList.remove("reg-windowVisible")
+})
+close3.addEventListener('click', () => {
+    loginWindow.classList.remove("login-windowVisible")
+})
 
 loginRequest.addEventListener('click', (e) => {
     e.preventDefault
@@ -90,4 +98,19 @@ loginRequest.addEventListener('click', (e) => {
 
 regRequest.addEventListener('click', (e) => {
     e.preventDefault
+})
+
+
+//Parallax back to the header button opacity effect by scrolling
+
+window.addEventListener('scroll', () => {
+    let parWindow = document.querySelector('.parWindow')
+    let position = window.pageYOffset / 600;
+    if (position < 1.2) {
+        parWindow.style.opacity = (0)
+    } else {
+        parWindow.style.opacity = (1)
+    }
+
+
 })

@@ -344,6 +344,7 @@
         </div>
     </div>
 
+
     <div class="newsSectionFacebook">
 
 
@@ -351,7 +352,25 @@
 
 
 
+    <!--Chit-Chat-->
 
+    <div class="title" id="chatSection">
+        <h2>Chat</h2>
+    </div>
+
+    <div class="chatContainer">
+        <div class="chatBody">
+            <div class="chatDisplay">
+
+            </div>
+            <form action="" id="chatControl">
+                <input type="text" name="chatMessage" id="chatMessage" placeholder="üzeneted">
+                <button type="submit" id="sendButton">Küld</button>
+                <p class="chatUser">Üzenet küldése mint: <span class="user">Felhasználónév</span></p>
+            </form>
+
+        </div>
+    </div>
 
 
 
@@ -394,13 +413,14 @@
     <!--Login Window, Reg Window, and pw reminder-->
     <div class="login-window">
         <img src="img/logo/golden-sword-bow-logo-discord.png" alt="">
+        <img id="close3" src="img/Red-Close-Button-Transparent.png" alt="">
         <form action="">
             <input type="text" name="username" id="username" placeholder="felhasználónév">
             <input type="password" name="password" id="password" placeholder="jelszó">
             <button type="submit" id="loginRequest">Bejelentkezés</button>
         </form>
         <div class="info-box">
-            <a href="#" id="reg">Registráció</a>
+            <a href="#" id="reg">Regisztráció</a>
             <a href="#" id="forgottenPass">Elfelejtett Jelszó</a>
 
         </div>
@@ -410,6 +430,7 @@
 
     <div class="reg-window">
         <img src="img/logo/golden-sword-bow-logo-discord.png" alt="">
+        <img id="close2" src="img/Red-Close-Button-Transparent.png" alt="">
         <form action="">
             <input type="text" name="reg-username" id="regUsername" placeholder="felhasználónév">
             <input type="text" name="fullName" id="fullName" placeholder="teljes neved">
@@ -430,6 +451,11 @@
         </form>
     </div>
 
+    <!--Parallax jump to start button-->
+
+    <div class="parWindow">
+        <a href="#jumbo" id="parallax"> <i class="fas fa-chevron-up"></i></a>
+    </div>
 
 
 
@@ -440,9 +466,7 @@
 
 
 
-
-
-
+    <!--Created by LPST Copyright ©2021-->
     <script src="main.js"></script>
     <script src="ip.js"></script>
 

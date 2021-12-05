@@ -356,14 +356,14 @@ nav {
 .teamSection {
     width: 100%;
     max-width: 1920px;
-    background-color: $navTextColor;
+    background-color: rgb(226, 226, 226);
     padding: 40px;
 }
 
 .teamContainer {
     height: 100%;
     width: 100%;
-    background-color: $navTextColor;
+    background-color: rgb(226, 226, 226);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -507,6 +507,14 @@ nav {
     display: flex;
     justify-content: center;
     padding-right: 10px;
+}
+
+.contactform input:focus {
+    outline: none;
+}
+
+.contactform textarea:focus {
+    outline: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -666,9 +674,86 @@ nav {
 }
 
 
+/*Chat*/
+
+.chatContainer {
+    width: 100%;
+    max-width: 1920px;
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.chatBody {
+    width: 90%;
+    max-width: 1024px;
+    height: 600px;
+    background-color: #ddd;
+    border-radius: 20px;
+    border: 3px solid #ddd;
+    overflow: hidden;
+}
+
+.chatDisplay {
+    width: 100%;
+    height: 550px;
+    background-color: white;
+}
+
+.chatBody form {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.chatBody input {
+    width: 50%;
+    height: 43px;
+    border: none;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.chatBody input:focus {
+    outline: none;
+}
+
+.chatBody button {
+    border: none;
+    height: 43px;
+    padding: 0 15px;
+    background-color: #333;
+    font-size: 18px;
+    color: white;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+
+.chatBody button:hover {
+    background-color: #666;
+}
+
+.chatBody .chatUser {
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.chatBody .chatUser .user {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    color: $link1;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+
 /*Login-window*/
 
-.login-window {
+.login-window,
+.reminder-window,
+.reg-window {
     width: 300px;
     height: 400px;
     background-color: rgba(51, 51, 51, 0.63);
@@ -698,6 +783,10 @@ nav {
     margin-bottom: 35px;
     border: 2px solid $link3;
     background-color: rgb(230, 230, 230);
+}
+
+.login-window input:focus {
+    outline: none;
 }
 
 .login-window button {
@@ -742,19 +831,6 @@ nav {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.reg-window {
-    width: 300px;
-    height: 400px;
-    background-color: rgba(51, 51, 51, 0.466);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border: 2px solid $link3;
-    border-radius: 10px;
-    transition: .3s;
-}
-
 .reg-windowVisible {
     transform: translate(-50%, -50%) scale(1);
 }
@@ -775,6 +851,10 @@ nav {
     margin-bottom: 15px;
     border: 2px solid $link3;
     background-color: rgb(230, 230, 230);
+}
+
+.reg-window input:focus {
+    outline: none;
 }
 
 .reg-window button {
@@ -801,19 +881,6 @@ nav {
         border-radius: 50%;
         transform: translate(0, -50%);
     }
-}
-
-.reminder-window {
-    width: 300px;
-    height: 400px;
-    background-color: rgba(51, 51, 51, 0.466);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border: 2px solid $link3;
-    border-radius: 10px;
-    transition: .3s;
 }
 
 .reminder-windowVisible {
@@ -846,11 +913,15 @@ nav {
     border-bottom-left-radius: 5px;
 }
 
+.reminder-window input:focus {
+    outline: none;
+}
+
 .reminder-window button {
     height: 30px;
     padding: 0 15px;
     border: 1px solid $link3;
-    border-left: none;
+    border-left: 1px solid $link3;
     background-color: #aaa;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -861,10 +932,54 @@ nav {
     background-color: rgb(226, 202, 136);
 }
 
-#close {
+#close,
+#close2,
+#close3 {
     position: absolute;
     width: 28px;
     transform: translate(116px, -14px);
     background-color: $link3;
     cursor: pointer;
+    transition: .5s;
+}
+
+#close:hover,
+#close2:hover,
+#close3:hover {
+    transform-origin: center;
+    transform: translate(116px, -14px) rotate(360deg);
+}
+
+
+/*Parallax chevron*/
+
+.parWindow {
+    position: sticky;
+    width: 100%;
+    max-width: 1920px;
+    opacity: 0;
+    transition: .7s;
+    bottom: 0;
+}
+
+#parallax {
+    width: 40px;
+    height: 40px;
+    background-color: $link1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+}
+
+#parallax:hover {
+    background-color: $link4;
 }
