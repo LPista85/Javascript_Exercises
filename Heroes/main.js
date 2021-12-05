@@ -101,7 +101,7 @@ regRequest.addEventListener('click', (e) => {
 })
 
 
-//Parallax back to the header button opacity effect by scrolling
+//Parallax back to the top of the page button opacity effect by scrolling
 
 window.addEventListener('scroll', () => {
     let parWindow = document.querySelector('.parWindow')
