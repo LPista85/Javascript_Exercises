@@ -108,8 +108,10 @@ window.addEventListener('scroll', () => {
     let position = window.pageYOffset / 600;
     if (position < 1.2) {
         parWindow.style.opacity = (0)
+        parWindow.style.bottom = "-40px"
     } else {
         parWindow.style.opacity = (1)
+        parWindow.style.bottom = "20px"
     }
 
 
