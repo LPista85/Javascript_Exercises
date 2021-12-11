@@ -1,0 +1,456 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.horizon {
+  width: 100%;
+  height: 60vh;
+  background-color: #2489fd;
+  position: relative;
+  overflow: hidden;
+}
+
+.horizon .clouds {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  bottom: -20%;
+  left: -5%;
+}
+
+.horizon .clouds .circle {
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.horizon .clouds .circle1 {
+  width: 250px;
+  height: 180px;
+}
+
+.horizon .clouds .circle2 {
+  width: 80px;
+  height: 80px;
+  right: 0px;
+  top: 0;
+}
+
+.horizon .clouds .circle3 {
+  width: 140px;
+  height: 80px;
+  right: -45px;
+  top: 80px;
+}
+
+.horizon .clouds .circle4 {
+  width: 100px;
+  height: 80px;
+  right: -25px;
+  top: 120px;
+}
+
+.horizon .clouds .circle5 {
+  width: 40px;
+  height: 40px;
+  right: -10px;
+  top: 60px;
+}
+
+.horizon .clouds .circle6 {
+  width: 120px;
+  height: 40px;
+  right: 20%;
+  top: -15px;
+}
+
+.ground {
+  background-color: #e9d8c6;
+  width: 100%;
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 531px;
+          perspective: 531px;
+  -webkit-perspective-origin: 49% 43%;
+          perspective-origin: 49% 43%;
+  overflow: hidden;
+}
+
+.ground .asphalt {
+  z-index: 1;
+  width: 80%;
+  height: 120%;
+  background-color: gray;
+  -webkit-transform: scaleX(1) scaleY(42) scaleZ(6) rotateX(86deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+          transform: scaleX(1) scaleY(42) scaleZ(6) rotateX(86deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ground .asphalt .line {
+  width: 33%;
+  height: 120px;
+  border-left: 20px solid white;
+  border-right: 20px solid white;
+  margin-bottom: 20px;
+}
+
+.ferrariContainer {
+  width: 400px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.ferrariContainer .windshieldcontainer {
+  width: 100%;
+  height: 60px;
+  -webkit-perspective: 30px;
+          perspective: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ferrariContainer .windshieldcontainer .windshield {
+  border: 10px solid #ee2a18;
+  background-color: rgba(0, 0, 0, 0.301);
+  width: 65%;
+  height: 100%;
+  -webkit-transform: rotateX(8deg) rotateY(0deg) translateY(-1px) translateY(6px);
+          transform: rotateX(8deg) rotateY(0deg) translateY(-1px) translateY(6px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border-bottom: none;
+}
+
+.ferrariContainer .cartop {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-perspective: 30px;
+          perspective: 30px;
+}
+
+.ferrariContainer .cartop .cartransform {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  -webkit-transform: rotateX(18deg) rotateY(0deg) translateY(-1px);
+          transform: rotateX(18deg) rotateY(0deg) translateY(-1px);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 86%;
+  height: 100%;
+  background-color: #ee2a18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ferrariContainer .cartop .cartransform .carboot {
+  width: 60%;
+  height: 60%;
+  border-left: 15px solid black;
+  border-right: 15px solid black;
+  border-bottom: 5px solid black;
+}
+
+.ferrariContainer .tailLights {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ferrariContainer img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  height: 95%;
+}
+
+.ferrariContainer .lamp {
+  width: 20%;
+  height: 70%;
+  background-color: #910d01;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ferrariContainer .lamp .graylamp {
+  width: 20%;
+  height: 50%;
+  background-color: #bbbbbb;
+}
+
+.ferrariContainer .lamp .indicator {
+  width: 40%;
+  height: 50%;
+  background-color: #d57a05;
+}
+
+.ferrariContainer .leftlamp {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.ferrariContainer .carbottom {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-radius: 50px 50px 100px 100px / 0px 0px 25px 25px;
+  background-color: #ee2a18;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ferrariContainer .carbottom .blacksection {
+  width: 60%;
+  height: 50%;
+  border-radius: 50px 50px 100px 100px / 0px 0px 25px 25px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ferrariContainer .carbottom .blacksection .regplate {
+  width: 30%;
+  height: 25px;
+  background-color: #cfcfcf;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.438), -5px 0px 5px rgba(0, 0, 0, 0.438);
+          box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.438), -5px 0px 5px rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ferrariContainer .carbottom .blacksection .regplate p {
+  font-size: 6px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.ferrariContainer .tyrecontainer {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+.ferrariContainer .tyrecontainer .exhaust {
+  width: 40%;
+  height: 8px;
+  background-color: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.ferrariContainer .tyrecontainer .tyre {
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
+}
+
+.ferrariContainer .tyrecontainer .tyre .tyrepattern {
+  width: 40%;
+  height: 100%;
+  border-left: 5px dashed #5a5a5a;
+  border-right: 5px dashed #525252;
+}
+
+.ferrariContainer .tyrecontainer .tyreleft {
+  margin-left: 5px;
+}
+
+.ferrariContainer .tyrecontainer .tyreright {
+  margin-right: 5px;
+}
+
+.mirrorcontainer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
+  bottom: 206px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mirrorcontainer .mirrortop {
+  width: 6px;
+  height: 8px;
+  background-color: black;
+}
+
+.mirrorcontainer .centermirror {
+  width: 50px;
+  height: 18px;
+  border: 2px solid black;
+  background-color: rgba(36, 137, 253, 0.459);
+  border-radius: 3px;
+}
+
+.leftmirrorcontainer {
+  position: absolute;
+  bottom: 190px;
+  left: 40.2%;
+}
+
+.leftmirrorcontainer .leftmirror {
+  border: 2px solid black;
+  background-color: rgba(36, 137, 253, 0.459);
+  width: 40px;
+  height: 18px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.rightmirrorcontainer {
+  position: absolute;
+  bottom: 190px;
+  right: 40.2%;
+}
+
+.rightmirrorcontainer .rightmirror {
+  border: 2px solid black;
+  background-color: rgba(36, 137, 253, 0.459);
+  width: 40px;
+  height: 18px;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+
+.palm {
+  position: absolute;
+  width: 400px;
+  bottom: 100px;
+  left: -170px;
+}
+
+.palm:nth-of-type(2) {
+  bottom: 150px;
+  left: 80px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.palm:nth-of-type(3) {
+  bottom: 180px;
+  left: 300px;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+.palm:nth-of-type(5) {
+  bottom: 100px;
+  left: 1670px;
+}
+
+.palm:nth-of-type(4) {
+  bottom: 150px;
+  left: 1410px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.palm:nth-of-type(6) {
+  bottom: 180px;
+  left: 1190px;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+/*# sourceMappingURL=style.css.map */
