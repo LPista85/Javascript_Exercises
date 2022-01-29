@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="editorContainer">
+        <div class="photoContainer">
+            <div class="photoCanvas">
+
+            </div>
+        </div>
+        <div class="editSection">
+            <p>Contrast</p>
+            <input type="range" min="0" max="200" value="100" name="contrast" id="contrast">
+            <button type="button" class="contrastReset">Reset</button>
+
+            <p>Brightness</p>
+            <input type="range" min="0" max="200" value="100" name="brightness" id="brightness">
+            <button type="button" class="brightnessReset">Reset</button>
+
+            <p>Saturation</p>
+            <input type="range" min="0" max="200" value="100" name="saturation" id="saturation">
+            <button type="button" class="saturationReset">Reset</button>
+
+        </div>
+
+
+    </div>
+    <div class="uploadContainer">
+        <input type="file" id="upload">
+        <button id="uploadButton">Use</button>
+    </div>
+        
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

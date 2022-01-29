@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.editorContainer {
+  width: 1324px;
+  height: 768px;
+  border: 1px solid #ddd;
+  border-right: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.editorContainer .photoContainer {
+  width: 1024px;
+  height: 768px;
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editorContainer .photoContainer .photoCanvas {
+  width: 80%;
+  height: 80%;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: contrast(100%) brightness(100%) saturate(100%);
+          filter: contrast(100%) brightness(100%) saturate(100%);
+}
+
+.editorContainer .editSection {
+  width: 300px;
+  height: 768px;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.editorContainer .editSection input {
+  width: 70%;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.editorContainer .editSection input[type=range] {
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+}
+
+.editorContainer .editSection input[type=range]:focus {
+  outline: none;
+}
+
+.editorContainer .editSection input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0px #000000;
+          box-shadow: 0px 0px 0px #000000;
+  background: #2497E3;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+
+.editorContainer .editSection input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: 0px 0px 0px #000000;
+          box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #A1D0FF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+.editorContainer .editSection input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #2497E3;
+}
+
+.editorContainer .editSection input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #2497E3;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+
+.editorContainer .editSection input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #A1D0FF;
+  cursor: pointer;
+}
+
+.editorContainer .editSection input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.editorContainer .editSection input[type=range]::-ms-fill-lower {
+  background: #2497E3;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.editorContainer .editSection input[type=range]::-ms-fill-upper {
+  background: #2497E3;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+.editorContainer .editSection input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #2497E3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #A1D0FF;
+  cursor: pointer;
+}
+
+.editorContainer .editSection input[type=range]:focus::-ms-fill-lower {
+  background: #2497E3;
+}
+
+.editorContainer .editSection input[type=range]:focus::-ms-fill-upper {
+  background: #2497E3;
+}
+
+.editorContainer .editSection p {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 15%;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.editorContainer .editSection button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 15%;
+  padding: 2px 5px;
+}
+
+.uploadContainer {
+  width: 1324px;
+  height: 60px;
+  background-color: #333;
+  border-top: 1px solid #ddd;
+  margin-bottom: 60px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 40px;
+}
+
+.uploadContainer button {
+  padding: 3px 6px;
+}
+/*# sourceMappingURL=style.css.map */

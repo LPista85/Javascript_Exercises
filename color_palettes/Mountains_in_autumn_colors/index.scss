@@ -1,0 +1,71 @@
+$autumnGreen: #ccaf03;
+$grass: #405a00;
+$waterfallWhite: #fbf9ff;
+$levander: #1f1b4e;
+$pink: #fbb6c0;
+$lightLevander: #796dae;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    font-family: alpine-script;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    position: relative;
+}
+
+div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    p {
+        margin-top: 50px;
+        color: $waterfallWhite;
+    }
+}
+
+div:nth-of-type(1) {
+    background-color: $levander;
+}
+
+div:nth-of-type(2) {
+    background-color: $lightLevander;
+}
+
+div:nth-of-type(3) {
+    background-color: $pink;
+}
+
+div:nth-of-type(4) {
+    background-color: $grass;
+}
+
+div:nth-of-type(5) {
+    background-color: $autumnGreen;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+h2 {
+    font-size: 160px;
+    color: $waterfallWhite;
+    letter-spacing: 30px;
+}

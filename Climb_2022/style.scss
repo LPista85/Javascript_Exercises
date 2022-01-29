@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tripContainer{
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .mountainCard{
+        width: 260px;
+        height: 360px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 10px;
+        .photoSection{
+            width: 260px;
+            height: 200px;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .textSection{
+            height: 100%;
+            padding: 10px;
+            h2,h4, p{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .mountainCard:nth-last-child(10){
+        .textSection{
+            background-color: black;
+        }
+    }
+    
+    
+
+}

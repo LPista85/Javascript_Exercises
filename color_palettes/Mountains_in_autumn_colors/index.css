@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: alpine-script;
+  font-weight: 400;
+  font-style: normal;
+  overflow: hidden;
+  position: relative;
+}
+
+div {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 36px;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+}
+
+div p {
+  margin-top: 50px;
+  color: #fbf9ff;
+}
+
+div:nth-of-type(1) {
+  background-color: #1f1b4e;
+}
+
+div:nth-of-type(2) {
+  background-color: #796dae;
+}
+
+div:nth-of-type(3) {
+  background-color: #fbb6c0;
+}
+
+div:nth-of-type(4) {
+  background-color: #405a00;
+}
+
+div:nth-of-type(5) {
+  background-color: #ccaf03;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+h2 {
+  font-size: 160px;
+  color: #fbf9ff;
+  letter-spacing: 30px;
+}
+/*# sourceMappingURL=index.css.map */
